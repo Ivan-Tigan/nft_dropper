@@ -1,7 +1,6 @@
 let f = document.forms.f.elements
 
-
-let html5QrcodeScanner = new Html5QrcodeScanner("reader",{ fps: 0.3, qrbox: {width: 250, height: 250} },/* verbose= */ false);
+let html5QrcodeScanner = new Html5QrcodeScanner("reader",{ fps: 0.5, qrbox: {width: 500, height: 500} },/* verbose= */ false);
 html5QrcodeScanner.render((decodedText, _) => {
   //Free Sound Effect acquired at https://www.freesoundslibrary.com/success-sound-effect/
   // Idea is to give feedback to whoever is trying to scan the public key
